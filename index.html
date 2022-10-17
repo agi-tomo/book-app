@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookshelf Apps</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Bookshelf</h1>
+            </header>
+
+            <div class="top">
+                <div class="form-container">
+                    <h2 class="textholder">Menambah Buku</h2>
+                    <form id="addBook" action="" method="post">
+                        <div class="form-group">
+                            <input
+                                type="text"
+                                name="title"
+                                id="title"
+                                placeholder=""
+                            />
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    name="author"
+                                    id="author"
+                                    placeholder=""
+                                />
+                                <label for="author">author</label>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="number"
+                                    name="publish"
+                                    id="publish"
+                                    placeholder=""
+                                />
+                                <label for="publish">publish</label>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input
+                                type="checkbox"
+                                name="isRead"
+                                id="isRead"
+                                placeholder=""
+                            />
+                            <label for="isRead">Selesai dibaca</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
+                <div class="search-container">
+                    <h2 class="textholder">Cari Buku</h2>
+                    <form id="formSearch" action="" method="post">
+                        <div class="form-group">
+                            <input
+                                type="text"
+                                name="seacrh"
+                                id="seacrh"
+                                placeholder=""
+                            />
+                            <label for="seacrh">Find Book</label>
+                        </div>
+                        <div class="form-search-bottom">
+                            <button type="reset" class="reset-btn">
+                                <i class="bx bx-reset"></i>
+                            </button>
+                            <button type="submit" class="find">
+                                <i class="bx bx-search-alt-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="unRead-container">
+                    <h2 class="textholder">Belum selesai dibaca</h2>
+                    <div id="unRead"></div>
+                </div>
+                <div class="doneRead-container">
+                    <h2 class="textholder">Selesai dibaca</h2>
+                    <div id="doneRead"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
